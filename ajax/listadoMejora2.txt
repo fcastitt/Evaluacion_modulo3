@@ -1,0 +1,6 @@
+<h1>Listado de mejoras</h1>
+ 
+<input type="checkbox" name="checkbox" value="check1"> <label for="check1">Mantencion</label><br>
+<input type="checkbox" name="checkbox" value="check2" checked> <label for="check2">Capacitaciones</label><br>
+<input type="checkbox" name="checkbox" value="check3" checked> <label for="check3">Visita al terreno</label><br>
+<input type="checkbox" name="checkbox" value="check4"> <label for="check4">Mantencion</label><br>

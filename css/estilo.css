@@ -1,0 +1,117 @@
+body {
+    background-image: url("https://s2.best-wallpaper.net/wallpaper/5120x2880/1808/Abstract-geometric-background-lines-dots-blue_5120x2880.jpg");
+    background-size: 100%;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+    padding-top: 4rem;
+}
+  
+table {
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: 30px;
+    border: white 5px solid;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height:1.3em;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: justify;
+    color: blue;
+}
+
+.formularios {
+    width: 70%; 
+	margin: 0 auto;
+}
+
+td {
+    vertical-align: top;
+}
+
+.menuVolver {
+    text-align: center;
+}
+
+.centrar-contenido {
+    text-align: center;
+}
+  
+.tituloPrincipal {
+    color: white;
+    text-align: center;
+    font-family: Impact ;
+}
+  
+li {
+    font-family: sans-serif;
+    text-align: justify;
+    color: blue;
+}
+  
+.titulosTabla{
+    font-family: Verdana, Tahoma, sans-serif;
+    color: darkblue;
+}
+
+/*AdministrarAsistentes*/
+
+.tablaAdmin{
+	background-color: white;
+	padding: 1rem 1rem;
+    border-radius: 30px;
+    border: white 5px solid;
+}
+  
+  
+/* Dispositivos pequeños (teléfonos, 600px y menos) */
+@media only screen and (max-width: 600px) {
+   
+    .container{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    table{
+        font-weight: bold;
+    }
+  
+}
+  
+/* Dispositivos pequeños (tabletas verticales y teléfonos largos, 600px y más) */
+@media only screen and (min-width: 600px) {
+   
+    .container{
+        width: 80%;
+         
+    }
+    body{
+        padding-top: 9rem; 
+    }
+}
+  
+  
+/* Dispositivos largos (laptops/escritorio, 992px y más) */
+@media only screen and (min-width: 992px) {
+  
+    .container{
+        width: 900px;
+         
+    }
+
+    body{
+        padding-top: 4rem; 
+    }
+    
+}
+  
+  
+  
+  
+  

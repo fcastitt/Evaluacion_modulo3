@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Grupal_4 -->
+
+<head>
+    <title>Listado de visitas</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/estiloMenu.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/menu.js"></script>
+
+    <script type="text/javascript" src="./scripts/jquery.js"></script>
+    <script type="text/javascript" src="./scripts/validacion.js"></script>
+
+    <script type="text/javascript" src="./scripts/plugins/FileSaver.min.js"></script>
+    <script type="text/javascript" src="./scripts/plugins/tableexport.min.js"></script>
+    <script type="text/javascript" src="./scripts/plugins/exportar.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<span class="siva">
+						<li class="submenu1"><a href="">Listados</a>
+							<ul>
+								<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+									<ul>
+										<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a>
+									<ul>
+										<li><a href="./crearusuario.html">Crear Usuario</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a>
+									<ul>
+										<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a>
+									<ul>
+										<li><a href="./crearpago.html">Crear Pago</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a>
+									<ul>
+										<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+							</ul>
+						</li>
+					</span>
+					<span class="nova">
+
+						<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+						</li>
+
+						<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a> </li>
+
+						<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a> </li>
+
+						<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a> </li>
+
+						<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a> </li>
+
+						<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+
+					</span>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+    <main class="main">
+        <div class="container">
+
+            <h1 class="tituloPrincipal">Listado de visitas</h1>
+
+            <table id="tablaVisitas" tableexport-key="tablaVisitas" class="centrar-contenido"    >
+                <thead>
+                    <tr>
+                        <th>Id_visita</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>RUT del cliente</th>
+                        <th>Nombre del cliente</th>
+                        <th>Chequeo de asesoria</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>00001</td>
+                        <td>11/01</td>
+                        <td>10:30</td>
+                        <td>11.111.111-1</td>
+                        <td>Antonia</td>
+                        <td><a href="#" class="confirmarChk"><img
+                                    src="https://static.thenounproject.com/png/3879-200.png" width="30px"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>00002</td>
+                        <td>12/02</td>
+                        <td>11:30</td>
+                        <td>22.222.222-2</td>
+                        <td>Bernardita</td>
+                        <td><a href="#" class="confirmarChk"><img
+                                    src="https://static.thenounproject.com/png/3879-200.png" width="30px"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>00003</td>
+                        <td>13/03</td>
+                        <td>12:30</td>
+                        <td>33.333.333-3</td>
+                        <td>Camilo</td>
+                        <td><a href="#" class="confirmarChk"><img
+                                    src="https://static.thenounproject.com/png/3879-200.png" width="30px"></a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <br>
+                            <input type="button" id="exportarTXT" value="Exportar en TXT">
+                            <input type="button" id="exportarCSV" value="Exportar en CSV">
+                            <input type="button" id="exportarXLS" value="Exportar en EXCEL">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Pagina diseñada por Grupo 5
+        </div>
+    </footer>
+
+</body>
+
+</html>

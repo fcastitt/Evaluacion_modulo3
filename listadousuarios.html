@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Listado de Usuarios</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/estiloMenu.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/menu.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<span class="siva">
+						<li class="submenu1"><a href="">Listados</a>
+							<ul>
+								<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+									<ul>
+										<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a>
+									<ul>
+										<li><a href="./crearusuario.html">Crear Usuario</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a>
+									<ul>
+										<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a>
+									<ul>
+										<li><a href="./crearpago.html">Crear Pago</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a>
+									<ul>
+										<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+							</ul>
+						</li>
+					</span>
+					<span class="nova">
+
+						<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+						</li>
+
+						<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a> </li>
+
+						<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a> </li>
+
+						<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a> </li>
+
+						<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a> </li>
+
+						<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+
+					</span>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+    <main class="main">
+        <div class="container">
+
+            <h1 class="tituloPrincipal">Listado de Usuarios</h1>
+
+            <table id="listadousuarios" class="centrar-contenido">
+                <thead>
+                    <tr>
+                        <th style="width: 15%;">RUN</th>
+                        <th style="width: 30%;">nombre</th>
+                        <th style="width: 25%;">apelidos</th>
+                        <th style="width: 30%;">tipo de usuario</th>
+                        <th>Eliminar</th>
+                        <th>Agregar</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>11.111.111-1</td>
+                        <td>Alejandro</td>
+                        <td>A.</td>
+                        <td>Cliente</td>
+                        <td><a href=""><img src="https://cdn.icon-icons.com/icons2/55/PNG/128/editDelete_11203.png"
+                                    width="30px"></a></td>
+                        <td><a href="./editarcliente.html"><img
+                                    src="https://cdn.icon-icons.com/icons2/402/PNG/128/edit-validated_40458.png"
+                                    width="30px"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>22.222.222-2</td>
+                        <td>Barbara</td>
+                        <td>B.</td>
+                        <td>Administrativo</td>
+                        <td><a href=""><img src="https://cdn.icon-icons.com/icons2/55/PNG/128/editDelete_11203.png"
+                                    width="30px"></a></td>
+                        <td><a href="./editaradministrativo.html"><img
+                                    src="https://cdn.icon-icons.com/icons2/402/PNG/128/edit-validated_40458.png"
+                                    width="30px"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>33.333.333-3</td>
+                        <td>Carlos</td>
+                        <td>C.</td>
+                        <td>Profesional</td>
+                        <td><a href=""><img src="https://cdn.icon-icons.com/icons2/55/PNG/128/editDelete_11203.png"
+                                    width="30px"></a></td>
+                        <td><a href="./editarprofesional.html"><img
+                                    src="https://cdn.icon-icons.com/icons2/402/PNG/128/edit-validated_40458.png"
+                                    width="30px"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>44.444.444-4</td>
+                        <td>Daniel</td>
+                        <td>D.</td>
+                        <td>Cliente</td>
+                        <td><a href=""><img src="https://cdn.icon-icons.com/icons2/55/PNG/128/editDelete_11203.png"
+                                    width="30px"></a></td>
+                        <td><a href="./editarcliente.html"><img
+                                    src="https://cdn.icon-icons.com/icons2/402/PNG/128/edit-validated_40458.png"
+                                    width="30px"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>55.555.555-5</td>
+                        <td>Estefania</td>
+                        <td>E.</td>
+                        <td>Administrativo</td>
+                        <td><a href=""><img src="https://cdn.icon-icons.com/icons2/55/PNG/128/editDelete_11203.png"
+                                    width="30px"></a></td>
+                        <td><a href="./editaradministrativo.html"><img
+                                    src="https://cdn.icon-icons.com/icons2/402/PNG/128/edit-validated_40458.png"
+                                    width="30px"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>66.666.666-6</td>
+                        <td>Fabian</td>
+                        <td>F.</td>
+                        <td>Profesional</td>
+                        <td><a href=""><img src="https://cdn.icon-icons.com/icons2/55/PNG/128/editDelete_11203.png"
+                                    width="30px"></a></td>
+                        <td><a href="./editarprofesional.html"><img
+                                    src="https://cdn.icon-icons.com/icons2/402/PNG/128/edit-validated_40458.png"
+                                    width="30px"></a></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5"></td>
+                        <td>
+                            <br>
+                            <input type="button" onclick="location.href='./crearusuario.html';" value="Crear usuario">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Pagina diseñada por Grupo 5
+        </div>
+    </footer>
+
+</body>
+
+</html>

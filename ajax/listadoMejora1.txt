@@ -1,0 +1,6 @@
+<h1>Listado de mejoras</h1>
+ 
+<input type="checkbox" name="checkbox" value="check1" checked> <label for="check1">Mejora 1</label><br>
+<input type="checkbox" name="checkbox" value="check2"> <label for="check2">Mejora 2</label><br>
+<input type="checkbox" name="checkbox" value="check3"> <label for="check3">Mejora 3</label><br>
+<input type="checkbox" name="checkbox" value="check4" checked> <label for="check4">Mejora 4</label><br>

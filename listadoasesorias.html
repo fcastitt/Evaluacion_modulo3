@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Listado de Asesorias</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/estiloMenu.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/menu.js"></script>
+
+    <script src="./scripts/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<span class="siva">
+						<li class="submenu1"><a href="">Listados</a>
+							<ul>
+								<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+									<ul>
+										<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a>
+									<ul>
+										<li><a href="./crearusuario.html">Crear Usuario</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a>
+									<ul>
+										<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a>
+									<ul>
+										<li><a href="./crearpago.html">Crear Pago</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a>
+									<ul>
+										<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+							</ul>
+						</li>
+					</span>
+					<span class="nova">
+
+						<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+						</li>
+
+						<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a> </li>
+
+						<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a> </li>
+
+						<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a> </li>
+
+						<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a> </li>
+
+						<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+
+					</span>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+    <main class="main">
+        <div class="container">
+
+            <h1 class="tituloPrincipal">Listado de Asesorias</h1>
+
+            <table id="listadoAsesorias" class="centrar-contenido">
+                <thead>
+                    <tr>
+                        <th>ID_Asesoria</th>
+                        <th>Fecha</th>
+                        <th>nombre del cliente</th>
+                        <th>nombre del profesional </th>
+                        <th>Listado Mejora</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>03-03-2021</td>
+                        <td>Manuel</td>
+                        <td>Roberto</td>
+                        <td><input type="image" class="btn_listado1"
+                                src="https://image.flaticon.com/icons/png/128/570/570170.png" width="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>222</td>
+                        <td>04-03-2021</td>
+                        <td>Roberto</td>
+                        <td>Manuel</td>
+                        <td><input type="image" class="btn_listado2"
+                                src="https://image.flaticon.com/icons/png/128/570/570170.png" width="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>333</td>
+                        <td>05-03-2021</td>
+                        <td>Esteban</td>
+                        <td>Manuel</td>
+                        <td><input type="image" class="btn_listado1"
+                                src="https://image.flaticon.com/icons/png/128/570/570170.png" width="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>444</td>
+                        <td>06-03-2021</td>
+                        <td>Daniel</td>
+                        <td>Esteban</td>
+                        <td><input type="image" class="btn_listado2"
+                                src="https://image.flaticon.com/icons/png/128/570/570170.png" width="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>555</td>
+                        <td>07-03-2021</td>
+                        <td>Estefania</td>
+                        <td>Fabian</td>
+                        <td><input type="image" class="btn_listado1"
+                                src="https://image.flaticon.com/icons/png/128/570/570170.png" width="30px"></td>
+                    </tr>
+                    <tr>
+                        <td>666</td>
+                        <td>08-03-2021</td>
+                        <td>Fabian</td>
+                        <td>Esteban</td>
+                        <td><input type="image" class="btn_listado2"
+                                src="https://image.flaticon.com/icons/png/128/570/570170.png" width="30px"></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <br>
+                            <input type="button" id="estilo1" value="Estilo 1">
+                            <input type="button" id="estilo2" value="Estilo 2">
+                            <input type="button" id="estilo3" value="Estilo 3">
+                        </td>
+                        <td>
+                            <br>
+                            <input type="button" onclick="location.href='./crearasesorias.html';"
+                                value="Crear Asesoria">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">
+                            <div id="contenedor"></div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Pagina diseñada por Grupo 5
+        </div>
+    </footer>
+
+</body>
+
+</html>

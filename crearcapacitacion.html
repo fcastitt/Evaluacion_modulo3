@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Grupal_2 -->
+
+<head>
+	<title>Crear capacitacion</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/estiloMenu.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./scripts/menu.js"></script>
+
+	<script src="./scripts/validacion.js"></script>
+	<script src="./scripts/jquery.js"></script>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<li><a href="">Listados</a>
+						<ul>
+							<li><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+								<ul>
+									<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadousuarios.html">Listado de Usuario</a>
+								<ul>
+									<li><a href="./crearusuario.html">Crear Usuario</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadovisitas.html">Listado de Visitas</a>
+								<ul>
+									<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadopago.html">Listado de Pago</a>
+								<ul>
+									<li><a href="./crearpago.html">Crear Pago</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadoasesorias.html">Listado de Asesorias</a>
+								<ul>
+									<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+						</ul>
+					</li>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	<main class="main">
+		<div class="container">
+
+			<h1 class="tituloPrincipal">Crear capacitacion</h1>
+			<form action="" method="get" id="formularioCapacitacion">
+				<table class="formularios">
+					<tr>
+						<td>Fecha* [dd/mm/yyyy]:</td>
+						<td><input type="text" id="fecha"></td>
+					</tr>
+
+					<tr>
+						<td>Hora* :</td>
+						<td><input type="time" id="hora"></td>
+					</tr>
+
+					<tr>
+						<td>Lugar* :</td>
+						<td><input type="text" id="lugar"></td>
+					</tr>
+
+					<tr>
+						<td>Duración* :</td>
+						<td><input type="number" placeholder="0" id="duracion"></td>
+					</tr>
+
+					<tr>
+						<td>Nombre del cliente*:</td>
+						<td><input type="text" id="cliente"></td>
+					</tr>
+
+					<tr>
+						<td>(*) Datos obligatorio</td>
+						<td><br><input type="submit" id="agregarCapacitacion" value="Agregar"></td>
+					</tr>
+
+				</table>
+			</form>
+			<br>
+			<table class="formularios menuVolver">
+				<tr>
+					<td>
+						<input type="button" onclick="location.href='./listarcapacitaciones.html';" value="Volver" />
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			Pagina diseñada por Grupo 5
+		</div>
+	</footer>
+
+</body>
+
+</html>

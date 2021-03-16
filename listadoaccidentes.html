@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Grupal_1 -->
+
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+
+ 
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/estiloMenu.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./scripts/menu.js"></script>
+
+	<script src="./scripts/validacion.js"></script>
+	<script src="./scripts/jquery.js"></script>
+
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VHSO0wTkioXE6wDTLh1ABYF52ImeNCMnc4vxq3nZ0NVxPAv0IsyL_YasD9QHsUnwxbqv7eJgyzLQrh72927hSX3rkOsEV5Wnsi-L7h9iBqB5Sf6k7mO0txQOSqSwfOahCNk82EHkaRyaj7X0ZgzwUWnvyCLlcLztuD1TZdGWLDc" charset="UTF-8"></script><script src="scripts/libreriajquery1.js"></script>
+	<script src="./scripts/libreriajquery2.js"></script>
+	<script src="./scripts/functionValidacionAccidentes.js"></script>
+</head>
+
+<body >
+	
+	<header class="header">
+        <div class="container logo-nav-container"  >
+            <a href="#" class="logo">Grupo 5</a>
+            <span class="menu-icon">Menu</span>
+            <nav class="navigation">
+
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+
+                    <li><a href="">Listados</a>
+                        <ul>
+                            <li><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+                                <ul>
+                                    <li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./listadousuarios.html">Listado de Usuario</a>
+                                <ul>
+                                    <li><a href="./crearusuario.html">Crear Usuario</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./listadovisitas.html">Listado de Visitas</a>
+                                <ul>
+                                    <li><a href="./responderchecklist.html">Responder Checklist</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./listadopago.html">Listado de Pago</a>
+                                <ul>
+                                    <li><a href="./crearpago.html">Crear Pago</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./listadoasesorias.html">Listado de Asesorias</a>
+                                <ul>
+                                    <li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./reportes.html">Reportes</a></li>
+                    <li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+                    <li><a href="./login.html">Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <div class="container " class="tablaAdmin" >
+
+			<h1 class="tituloPrincipal">Formulario de accidentes</h1>
+
+            <form id="FormularioAccidentes" action="" method="get" style="background-color: white; background-image: none; padding: 1rem 1rem;
+            border-radius: 30px;
+            border: white 5px solid;">
+                <p>
+                  <label for="Identificador del accidente">Identificador del accidente <span>(Campo Obligatorio)</span></label>
+                  <input id="name" name="Id">
+                </p>
+              <p>
+                  <label for="FechaAccidente">Fecha del Accidente <span>(Campo Obligatorio)</span></label>
+                  <input id="FechaAccidente"  type="date" name="FechaAccidente">
+                </p>
+                <p>
+                  <label for="HoraAccidente">Hora del Accidente <span>(Campo Obligatorio)</span></label>
+                  <input id="HoraAccidente" type="time" name="HoraAccidente">
+                </p>
+              <p>
+                <label for="LugarAccidente">Lugar del Accidente <span>(Campo Obligatorio)</span></label>
+                <input id="LugarAccidente" name="LugarAccidente">
+                </p>
+                <p>
+                    <label for="OrigenAccidente">Origen del Accidente <span>(Campo Obligatorio)</span></label>
+                    <input id="OrigenAccidente" name="OrigenAccidente">
+                </p>
+                <p>
+                    <label for="Consecuencia">Consecuencia <span>(Campo Opcional)</span></label>
+                    <input id="Consecuencia" name="Consecuencia">
+                <p>
+                    <label for="Cliente">Cliente <span>(Campo Obligatorio)</span></label>
+                    <select id="Cliente" name="Cliente">
+						<option value=""></option>
+						<option value="1">Carlos</option>
+						<option value="2">Andrea</option>
+                        <option value="1">Karina</option>
+						<option value="2">Josefa</option>
+                </p></br>
+            </br></br>
+                <p>
+                  <input class="submit" type="submit" value="Enviar" >
+                </p>
+            </form>
+
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+            
+  
+
+        </div>
+    </main>
+               
+        <footer class="footer">
+            <div class="container">
+                Pagina diseñada por Grupo 5
+            </div>
+        </footer>
+    </body>
+</html>
+
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Administrar asistentes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/estiloMenu.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/menu.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="./scripts/administrarAsistente.js"></script>
+    <script src="./scripts/validacion.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<span class="siva">
+						<li class="submenu1"><a href="">Listados</a>
+							<ul>
+								<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+									<ul>
+										<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a>
+									<ul>
+										<li><a href="./crearusuario.html">Crear Usuario</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a>
+									<ul>
+										<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a>
+									<ul>
+										<li><a href="./crearpago.html">Crear Pago</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a>
+									<ul>
+										<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+							</ul>
+						</li>
+					</span>
+					<span class="nova">
+
+						<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+						</li>
+
+						<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a> </li>
+
+						<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a> </li>
+
+						<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a> </li>
+
+						<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a> </li>
+
+						<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+
+					</span>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+    <main class="main">
+
+        <div class="container" class="tablaAdmin">
+
+            <h1 class="tituloPrincipal">Administrar Asistentes</h1>
+
+            <div class="tablaAdmin">
+                <!-- Data table -->
+                <table id="listadofinal">
+                    <thead>
+                        <tr>
+                            <th>ID asistente</th>
+                            <th>Correo electronico</th>
+                            <th>Telefono</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>111@111.cl</td>
+                            <td>+569 1111 1111</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2222</td>
+                            <td>222@222.cl</td>
+                            <td>+569 2222 2222</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3333</td>
+                            <td>333@333.cl</td>
+                            <td>+569 3333 3333</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4444</td>
+                            <td>444@444.cl</td>
+                            <td>+569 4444 4444</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5555</td>
+                            <td>555@555.cl</td>
+                            <td>+569 5555 5555</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6666</td>
+                            <td>666@666.cl</td>
+                            <td>+569 6666 6666</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>7777</td>
+                            <td>777@777.cl</td>
+                            <td>+569 7777 7777</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>8888</td>
+                            <td>888@888.cl</td>
+                            <td>+569 8888 8888</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>9999</td>
+                            <td>999@999.cl</td>
+                            <td>+569 9999 9999</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1010</td>
+                            <td>101@101.cl</td>
+                            <td>+569 1010 1010</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1111</td>
+                            <td>1111@111.cl</td>
+                            <td>+569 1111 1111</td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="image" class="btn_listado"
+                                    src="https://media.istockphoto.com/vectors/error-symbol-icon-vector-id1090454684"
+                                    width="30px">
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+             
+            <h1 class="tituloPrincipal">Agregar Asistentes</h1>
+
+            <table class="formularios">
+                <form action="" method="get" id="formularioAsistente">
+                    <tr>
+                        <td> ID del asistente* :</td>
+                        <td> <input type="number" placeholder="ID" id="IDasist"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> Nombre del asistente* :</td>
+                        <td> <input type="text" placeholder="Nombre del asistente" id="nombreasist"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> Edad del asistente* :</td>
+                        <td> <input type="number" placeholder="Edad" id="edadasist"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> Mail del asistente*:</td>
+                        <td> <input type="email" placeholder="xx@xx.xx" id="mailasist"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> Telefono del asistente* : </td>
+                        <td> <input type="tel" placeholder="+569xxxxxxxx" id="telasist"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> Fecha y hora de la capacitacion* :</td>
+                        <td> <input type="datetime-local" id="fechahora"> </td>
+                    </tr>
+
+                    <tr>
+                        <td>Nombre del cliente que realiza la capacitacion *:</td>
+                        <td> <input type="text" placeholder="Nombre del cliente" id="clienteasist"> </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>(*) Datos obligatorio</strong></td>
+                        <td><input type="submit" id="agregarAsistentes" value="Agregar"></td>
+                    </tr>
+                </form>
+            </table>
+
+        </div>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            Pagina diseñada por Grupo 5
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

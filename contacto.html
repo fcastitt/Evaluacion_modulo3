@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Grupal_1 -->
+
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/estiloMenu.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./scripts/menu.js"></script>
+
+	<script src="./scripts/validacion.js"></script>
+	<script src="./scripts/jquery.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<li><a href="">Listados</a>
+						<ul>
+							<li><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+								<ul>
+									<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadousuarios.html">Listado de Usuario</a>
+								<ul>
+									<li><a href="./crearusuario.html">Crear Usuario</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadovisitas.html">Listado de Visitas</a>
+								<ul>
+									<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadopago.html">Listado de Pago</a>
+								<ul>
+									<li><a href="./crearpago.html">Crear Pago</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadoasesorias.html">Listado de Asesorias</a>
+								<ul>
+									<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+								</ul>
+							</li>
+
+							<li><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+						</ul>
+					</li>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	<main class="main">
+
+		<div class="container">
+			<h1 class="tituloPrincipal"> Contacto </h1>
+			<table class="formularios">
+				<form action="" method="get" id="formularioContacto">
+					<tr>
+						<td>Nombre* :</td>
+						<td><input type="text" id="nombre"></td>
+					</tr>
+					<tr>
+						<td>Correo Electronico* :</td>
+						<td><input type="text" id="correo"></td>
+					</tr>
+
+					<tr>
+						<td>Telefono* [+569XXXXXXXX] :</td>
+						<td><input type="text" id="telefono"></td>
+					</tr>
+
+					<tr>
+						<td>Mensaje* :</td>
+						<td><textarea name="Mensaje" id="mensaje" maxlength="300" rows="8" cols="22"></textarea></td>
+					</tr>
+
+					<tr>
+						<td>Genero* : </td>
+						<td>
+							<select id="genero">
+								<option value=""></option>
+								<option value="1">Hombre</option>
+								<option value="2">Mujer</option>
+							</select>
+						</td>
+					<tr>
+						<td>(*) Datos obligatorio</td>
+						<td><br><input type="submit" id="agregarMensaje" value="Enviar"></td>
+					</tr>
+				</form>
+			</table>
+		</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			Pagina diseñada por Grupo 5
+		</div>
+	</footer>
+
+</body>
+
+</html>

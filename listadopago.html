@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Listado de Pagos</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/estiloMenu.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/menu.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<span class="siva">
+						<li class="submenu1"><a href="">Listados</a>
+							<ul>
+								<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+									<ul>
+										<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a>
+									<ul>
+										<li><a href="./crearusuario.html">Crear Usuario</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a>
+									<ul>
+										<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a>
+									<ul>
+										<li><a href="./crearpago.html">Crear Pago</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a>
+									<ul>
+										<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+							</ul>
+						</li>
+					</span>
+					<span class="nova">
+
+						<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+						</li>
+
+						<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a> </li>
+
+						<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a> </li>
+
+						<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a> </li>
+
+						<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a> </li>
+
+						<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+
+					</span>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+    <main class="main">
+        <div class="container">
+
+            <h1 class="tituloPrincipal">Listado de Pagos</h1>
+
+            <table id="listadoPago" class="centrar-contenido">
+                <thead>
+                    <tr>
+                        <th>Id_pago</th>
+                        <th>Mes de pago</th>
+                        <th>Año de pago</th>
+                        <th>RUT del cliente</th>
+                        <th>Nombre del cliente</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>Enero</td>
+                        <td>2020</td>
+                        <td>11.111.111-1</td>
+                        <td>Roberto</td>
+                    </tr>
+                    <tr>
+                        <td>222</td>
+                        <td>Mayo</td>
+                        <td>2020</td>
+                        <td>22.222.222-2</td>
+                        <td>Manuel</td>
+                    </tr>
+                    <tr>
+                        <td>333</td>
+                        <td>Septiembre</td>
+                        <td>2020</td>
+                        <td>33.333.333-3</td>
+                        <td>Esteban</td>
+                    </tr>
+                    <tr>
+                        <td>444</td>
+                        <td>Abril</td>
+                        <td>2020</td>
+                        <td>44.444.444-4</td>
+                        <td>Daniel</td>
+                    </tr>
+                    <tr>
+                        <td>555</td>
+                        <td>Noviembre</td>
+                        <td>2020</td>
+                        <td>55.555.555-5</td>
+                        <td>Estefania</td>
+                    </tr>
+                    <tr>
+                        <td>666</td>
+                        <td>Marzo</td>
+                        <td>2020</td>
+                        <td>66.666.666-6</td>
+                        <td>Fabian</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td><br>
+                            <input type="button" onclick="location.href='./crearpago.html';" value="Crear pago">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Pagina diseñada por Grupo 5
+        </div>
+    </footer>
+
+</body>
+
+</html>

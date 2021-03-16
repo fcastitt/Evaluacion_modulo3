@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>FORMULARIO HTML</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/estiloMenu.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./scripts/menu.js"></script>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container logo-nav-container">
+			<a href="#" class="logo">Grupo 5</a>
+			<span class="menu-icon">Menu</span>
+			<nav class="navigation">
+
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+
+					<span class="siva">
+						<li class="submenu1"><a href="">Listados</a>
+							<ul>
+								<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+									<ul>
+										<li><a href="./crearcapacitacion.html">Crear Capacitaciones</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a>
+									<ul>
+										<li><a href="./crearusuario.html">Crear Usuario</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a>
+									<ul>
+										<li><a href="./responderchecklist.html">Responder Checklist</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a>
+									<ul>
+										<li><a href="./crearpago.html">Crear Pago</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a>
+									<ul>
+										<li><a href="./crearasesorias.html">Crear Asesorias</a></li>
+									</ul>
+								</li>
+
+								<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+							</ul>
+						</li>
+					</span>
+					<span class="nova">
+
+						<li class="submenu2"><a href="./listarcapacitaciones.html">Listado de Capacitaciones</a>
+						</li>
+
+						<li class="submenu2"><a href="./listadousuarios.html">Listado de Usuario</a> </li>
+
+						<li class="submenu2"><a href="./listadovisitas.html">Listado de Visitas</a> </li>
+
+						<li class="submenu2"><a href="./listadopago.html">Listado de Pago</a> </li>
+
+						<li class="submenu2"><a href="./listadoasesorias.html">Listado de Asesorias</a> </li>
+
+						<li class="submenu2"><a href="./listadoaccidentes.html">Listado de Accidentes</a></li>
+
+					</span>
+
+					<li><a href="./reportes.html">Reportes</a></li>
+					<li><a href="./administrarasistentes.html">Administrar Asistentes</a></li>
+					<li><a href="./login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	<main class="main">
+		<div class="container">
+
+			<h1 class="tituloPrincipal">Modificar Administrativo</h1>
+			<form>
+				<table class="formularios">
+					<tr>
+						<td>Ingrese su RUN:</td>
+						<td><input type="text" ID="Administrativo_RUN"></td>
+					</tr>
+
+					<tr>
+						<td>Ingrese sus nombres:</td>
+						<td><input type="text" ID="Administrativo_nombres"></td>
+					</tr>
+
+					<tr>
+						<td>Ingrese sus apellidos:</td>
+						<td><input type="text" ID="Administrativo_apellidos"></td>
+					</tr>
+
+					<tr>
+						<td>Ingrese su correo electronico:</td>
+						<td><input type="text" ID="Administrativo_mail"></td>
+					</tr>
+
+					<tr>
+						<td>Ingrese el área a la cual pertenece:</td>
+						<td><input type="text" ID="Administrativo_area"></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><br><input type="submit" value="Enviar"></td>
+					</tr>
+				</table>
+			</form>
+			<br>
+			<table class="formularios menuVolver">
+				<tr>
+					<td>
+						<input type="button" onclick="location.href='./listadousuarios.html';" value="Volver" />
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			Pagina diseñada por Grupo 5
+		</div>
+	</footer>
+
+</body>
+
+</html>
